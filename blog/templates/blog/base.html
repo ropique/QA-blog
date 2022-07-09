@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href = "{% static 'blog/main.css' %}">
 
-    <title> {% block title %} Django blog {% endblock %}</title>
+    <title> {% block title %} Chockochir {% endblock %}</title>
 
     
 </head>   
@@ -28,8 +28,9 @@
             
  
             
-                <a  href="{% url 'blog-home' %}">  <img src="/static/blog/logo.png"  id ="logo"> </a>
-                <a class="navbar-brand mr-4" href="{% url 'blog-home' %}">Home</a> 
+                <!-- <a  href="{% url 'blog-home' %}">  <img src="/static/blog/logo.png"  id ="logo"> </a> -->
+                <a class="navbar-brand mr-4" href="{% url 'blog-home' %}">Chockochir</a> 
+                <a class="navbar-brand mr-4" href="{% url 'about' %}">Our contacts</a>
               
                 {%  if user.is_authenticated %}
                 <a class="navbar-brand mr-4" href="{% url 'add_post' %}">New post</a>
@@ -73,7 +74,7 @@
                 <!-- <h3>Our Sidebar</h3> -->
               <!-- <p class='text-muted'>You can put any information here you'd like. -->
                 <ul class="list-group">
-                  <a class="list-group-item list-group-item-light" href="/post/" target="_blank">Get/Post content with JSON format</a>
+                  <!-- <a class="list-group-item list-group-item-light" href="/post/" target="_blank">Get/Post content with JSON format</a> -->
               
                 </ul>
               </p>
