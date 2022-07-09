@@ -30,7 +30,7 @@
             
                 <!-- <a  href="{% url 'blog-home' %}">  <img src="/static/blog/logo.png"  id ="logo"> </a> -->
                 <a class="navbar-brand mr-4" href="{% url 'blog-home' %}">Chockochir</a> 
-                <a class="navbar-brand mr-4" href="{% url 'about' %}">Our contacts</a>
+                <a class="navbar-brand mr-4" href="{% url 'blog-about' %}">Our contacts</a>
               
                 {%  if user.is_authenticated %}
                 <a class="navbar-brand mr-4" href="{% url 'add_post' %}">New post</a>
