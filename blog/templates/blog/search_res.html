@@ -7,15 +7,15 @@
     <div class="content-section">
     
         {% if s %}
-        <h1> You searched for: {{ s }}</h1>
+        <h1> Դուք փնտրել եք՝ {{ s }}</h1>
         <br/>
-       <h2>  Results: </h2>
+       <h2>  Որոնման արդյունքներ </h2>
         {% for venue in venues %}
          <h2>  <a  class="article-title" href= "{% url 'post-detail' venue.id %}">  {{ venue }} </a> </h2> <br/> <hr>
   
         {% endfor %}
     {% else %}
-        <h1> Empty search venue</h1>
+        <h1> Դատարկ հարցում</h1>
     {% endif %}
      
 
